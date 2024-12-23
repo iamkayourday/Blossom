@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
+import { FaUserPlus } from 'react-icons/fa'; // Importing the sign-up icon
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="p-4 bg-[#0e2207] text-white">
+    <header className="sticky top-0 z-50 p-4 bg-[#0e2207] text-white">
       {/* Header Wrapper */}
       <div
         className="flex items-center justify-between gap-4 px-6 py-3 rounded-3xl border border-[#fbc91a] mx-auto w-full max-w-6xl"
@@ -26,9 +27,48 @@ const Header = () => {
         }}
       >
         {/* Logo Text (left side) */}
-        <h1 className="text-xl md:text-2xl font-serif italic text-[#fbc91a]">
-          Blossom
+        <h1 className="text-3xl md:text-4xl font-serif italic text-white flex items-center">
+          <span>Bl</span>
+          <span className="text-4xl text-[#fbc91a]">🌼</span>
+          <span>ssom</span>
         </h1>
+
+        {/* Desktop Navigation Menu */}
+        <nav className="hidden md:flex items-center gap-6">
+          <a
+            href="#home"
+            className="hover:text-[#fbc91a] transition-colors cursor-pointer"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="hover:text-[#fbc91a] transition-colors cursor-pointer"
+          >
+            About Us
+          </a>
+          <a
+            href="#contact"
+            className="hover:text-[#fbc91a] transition-colors cursor-pointer"
+          >
+            Contact Us
+          </a>
+          <a
+            href="#faqs"
+            className="hover:text-[#fbc91a] transition-colors cursor-pointer"
+          >
+            FAQs
+          </a>
+
+          {/* Sign Up Button */}
+          <button
+            className="flex items-center gap-2 px-4 py-2 bg-[#1f6306] text-white rounded-lg hover:bg-[#fbc91a] transition-all"
+            title="Sign Up"
+          >
+            <FaUserPlus className="text-lg" />
+            <span>Sign Up</span>
+          </button>
+        </nav>
 
         {/* Menu Toggle Icon (for mobile) */}
         <div className="flex items-center gap-3 md:hidden">
@@ -46,28 +86,6 @@ const Header = () => {
             />
           )}
         </div>
-
-        {/* Desktop Navigation Menu */}
-        <nav className="hidden md:flex items-center gap-6">
-          <a
-            href="#home"
-            className="hover:text-[#fbc91a] transition-colors cursor-pointer"
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="hover:text-[#fbc91a] transition-colors cursor-pointer"
-          >
-            About
-          </a>
-          <a
-            href="#gallery"
-            className="hover:text-[#fbc91a] transition-colors cursor-pointer"
-          >
-            Gallery
-          </a>
-        </nav>
       </div>
 
       {/* Mobile Navigation Menu */}
@@ -95,17 +113,35 @@ const Header = () => {
               className="hover:text-[#fbc91a] transition-colors cursor-pointer"
               onClick={closeMenu}
             >
-              About
+              About Us
             </a>
           </li>
           <li>
             <a
-              href="#gallery"
+              href="#contact"
               className="hover:text-[#fbc91a] transition-colors cursor-pointer"
               onClick={closeMenu}
             >
-              Gallery
+              Contact Us
             </a>
+          </li>
+          <li>
+            <a
+              href="#faqs"
+              className="hover:text-[#fbc91a] transition-colors cursor-pointer"
+              onClick={closeMenu}
+            >
+              FAQs
+            </a>
+          </li>
+          <li>
+            <button
+              className="flex items-center gap-2 px-4 py-2 bg-[#1f6306] text-white rounded-lg hover:bg-[#fbc91a] transition-all"
+              title="Sign Up"
+            >
+              <FaUserPlus className="text-lg" />
+              <span>Sign Up</span>
+            </button>
           </li>
         </ul>
       </nav>
