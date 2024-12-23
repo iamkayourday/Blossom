@@ -12,8 +12,7 @@ const Header = () => {
   return (
     <header className="bg-white/30 border border-white/20 shadow-md sticky top-0 w-full z-50 backdrop-filter backdrop-blur-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center relative z-20">
-        {/* Logo */}
-        <h1 className={`text-2xl sm:text-3xl font-bold text-green-700 tracking-wide relative z-30 ${isMenuOpen ? 'block' : ''}`}>
+        <h1 className="text-2xl sm:text-3xl font-bold text-green-700 tracking-wide relative z-30">
           Bl<span className="inline-block text-[#fbc91a] transform scale-90">🌼</span>ssom
         </h1>
 
@@ -31,18 +30,8 @@ const Header = () => {
               isMenuOpen
                 ? 'transform translate-x-0'
                 : 'transform translate-x-full lg:transform-none'
-            } flex flex-col justify-center items-center`}
+            } ${isMenuOpen ? 'flex flex-col justify-center items-center' : ''}`}
           >
-            {/* Close Icon (Only for mobile menu) */}
-            {isMenuOpen && (
-              <button
-                onClick={toggleMenu}
-                className="absolute top-4 right-4 text-green-600 focus:outline-none lg:hidden z-30"
-              >
-                <FaTimes size={24} />
-              </button>
-            )}
-
             {/* Menu Items */}
             <li className="p-4">
               <a
