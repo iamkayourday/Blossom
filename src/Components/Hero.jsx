@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="flex justify-center relative">
           <input
             type="text"
-            placeholder="Search for products, farmers, or locations..."
+            placeholder="I am looking for..."
             className="w-full p-3 sm:p-4 md:p-4 rounded-xl text-black placeholder-gray-500 pl-12 focus:outline-none focus:ring-2 focus:ring-[#fbc91a] transition-all"
           />
           {/* Search Icon inside the input */}
