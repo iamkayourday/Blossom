@@ -1,11 +1,3 @@
-// This component, ProductList, displays a list of products. It retrieves all products 
-// from the JSON data, which are then displayed in a grid layout. While the products 
-// are being loaded, a skeleton loader is shown to simulate the loading phase for 
-// better user experience. Once the data is loaded, each product is shown in a 
-// card-like layout with an image, name, location, price, and availability status. 
-// Each product is clickable and links to a detailed product page using React Router's 
-// Link component. If no products are available, a message is shown.
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import data from '../../data.json'; // Import your data
@@ -56,10 +48,10 @@ const ProductList = () => {
         {products.length === 0 ? (
           <p className="text-center text-lg text-gray-500">No products available</p>
         ) : (
-          products.map((product, index) => (
+          products.map((product) => (
             <Link
-              to={`/product/${product.id}`} // Use Link to navigate to product details
-              key={`${product.id}-${index}`}
+              to={`/product/${product.id}`} // Ensure `id` is properly passed here
+              key={product.id} // Ensure the key is set to product.id for uniqueness
               className="bg-white rounded-xl shadow-lg overflow-hidden text-center cursor-pointer"
             >
               {/* Product Image */}

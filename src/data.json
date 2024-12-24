@@ -6,7 +6,7 @@
         "image": "img/fruits.png",
         "products": [
             {
-            "id": 1,
+            "id": 101,
             "name": "Apple",
             "image": "img/fruits.png",
             "location": "Washington, USA",
@@ -39,7 +39,7 @@
             }
             },
             {
-            "id": 2,
+            "id": 102,
             "name": "Banana",
             "image": "img/dairy.png",
             "location": "Chiquita, Ecuador",
@@ -80,7 +80,7 @@
         "image": "img/vegetables.png",
         "products": [
           {
-            "id": 1,
+            "id": 201,
             "name": "Carrot",
             "image": "img/dairy.png",
             "location": "California, USA",
@@ -113,7 +113,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 202,
             "name": "Broccoli",
             "image": "images/products/broccoli.jpg",
             "location": "Brittany, France",
@@ -154,7 +154,7 @@
         "image": "img/grains.png",
         "products": [
           {
-            "id": 1,
+            "id": 301,
             "name": "Rice",
             "image": "images/products/rice.jpg",
             "location": "Bangladesh",
@@ -187,7 +187,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 302,
             "name": "Quinoa",
             "image": "images/products/quinoa.jpg",
             "location": "Bolivia",
@@ -220,7 +220,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 303,
             "name": "Oats",
             "image": "images/products/oats.jpg",
             "location": "Canada",
@@ -260,7 +260,7 @@
         "image": "img/tubers.png",
         "products": [
           {
-            "id": 1,
+            "id": 401,
             "name": "Potato",
             "image": "images/products/potato.jpg",
             "location": "Idaho, USA",
@@ -293,7 +293,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 402,
             "name": "Sweet Potato",
             "image": "images/products/sweet_potato.jpg",
             "location": "North Carolina, USA",
@@ -326,7 +326,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 403,
             "name": "Yam",
             "image": "images/products/yam.jpg",
             "location": "Nigeria",
@@ -366,7 +366,7 @@
         "image": "img/dairy.png",
         "products": [
           {
-            "id": 1,
+            "id": 501,
             "name": "Milk",
             "image": "images/products/milk.jpg",
             "location": "Dairyland, USA",
@@ -399,7 +399,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 502,
             "name": "Cheddar Cheese",
             "image": "images/products/cheddar_cheese.jpg",
             "location": "Wisconsin, USA",
@@ -432,7 +432,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 503,
             "name": "Yogurt",
             "image": "images/products/yogurt.jpg",
             "location": "California, USA",
@@ -474,7 +474,7 @@
         "image": "img/nuts.jpg",
         "products": [
           {
-            "id": 1,
+            "id": 702,
             "name": "Almonds",
             "image": "images/products/almonds.jpg",
             "location": "California, USA",
@@ -507,7 +507,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 702,
             "name": "Cashews",
             "image": "images/products/cashews.jpg",
             "location": "India",
@@ -540,7 +540,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 703,
             "name": "Sunflower Seeds",
             "image": "images/products/sunflower_seeds.jpg",
             "location": "Ukraine",
@@ -581,7 +581,7 @@
         "image": "img/spices.jpg",
         "products": [
           {
-            "id": 1,
+            "id":801,
             "name": "Cinnamon",
             "image": "images/products/cinnamon.jpg",
             "location": "Sri Lanka",
@@ -614,7 +614,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 802,
             "name": "Black Pepper",
             "image": "images/products/black_pepper.jpg",
             "location": "India",
@@ -647,7 +647,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 803,
             "name": "Turmeric",
             "image": "images/products/turmeric.jpg",
             "location": "India",
@@ -688,7 +688,7 @@
         "image": "img/baked.jpg",
         "products": [
           {
-            "id": 1,
+            "id": 901,
             "name": "Whole Wheat Bread",
             "image": "images/products/wheat_bread.jpg",
             "location": "New York, USA",
@@ -721,7 +721,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 902,
             "name": "Chocolate Chip Cookies",
             "image": "images/products/chocolate_chip_cookies.jpg",
             "location": "California, USA",
@@ -754,7 +754,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 903,
             "name": "Croissants",
             "image": "images/products/croissants.jpg",
             "location": "Paris, France",
@@ -795,7 +795,7 @@
         "image": "img/frozen.jpg",
         "products": [
           {
-            "id": 1,
+            "id": 1001,
             "name": "Frozen Peas",
             "image": "images/products/frozen_peas.jpg",
             "location": "Green Farms, USA",
@@ -828,7 +828,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 1002,
             "name": "Frozen Corn",
             "image": "images/products/frozen_corn.jpg",
             "location": "Sunny Acres, USA",
@@ -861,7 +861,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 1003,
             "name": "Frozen Broccoli",
             "image": "images/products/frozen_broccoli.jpg",
             "location": "Green Valley, USA",
@@ -902,7 +902,7 @@
         "image": "img/meats.jpg",
         "products": [
           {
-            "id": 1,
+            "id": 1111,
             "name": "Chicken Breast",
             "image": "images/products/chicken_breast.jpg",
             "location": "Texas, USA",
@@ -935,7 +935,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 1112,
             "name": "Salmon Fillet",
             "image": "images/products/salmon_fillet.jpg",
             "location": "Alaska, USA",
@@ -968,7 +968,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 1113,
             "name": "Shrimp",
             "image": "images/products/shrimp.jpg",
             "location": "Gulf of Mexico, USA",
@@ -1009,7 +1009,7 @@
         "image": "images/snacks.jpg",
         "products": [
           {
-            "id": 1,
+            "id": 2221,
             "name": "Potato Chips",
             "image": "images/products/potato_chips.jpg",
             "location": "USA",
@@ -1042,7 +1042,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 2222,
             "name": "Granola Bars",
             "image": "images/products/granola_bars.jpg",
             "location": "USA",
@@ -1075,7 +1075,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 2223,
             "name": "Trail Mix",
             "image": "images/products/trail_mix.jpg",
             "location": "USA",
@@ -1116,7 +1116,7 @@
         "image": "images/condiments.jpg",
         "products": [
           {
-            "id": 1,
+            "id":3331,
             "name": "Ketchup",
             "image": "images/products/ketchup.jpg",
             "location": "California, USA",
@@ -1149,7 +1149,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 3332,
             "name": "Mustard",
             "image": "images/products/mustard.jpg",
             "location": "Germany",
@@ -1182,7 +1182,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 3333,
             "name": "Barbecue Sauce",
             "image": "images/products/barbecue_sauce.jpg",
             "location": "Texas, USA",
@@ -1223,7 +1223,7 @@
         "image": "images/health_wellness.jpg",
         "products": [
           {
-            "id": 1,
+            "id": 4441,
             "name": "Vitamin C Tablets",
             "image": "images/products/vitamin_c.jpg",
             "location": "USA",
@@ -1256,7 +1256,7 @@
             }
           },
           {
-            "id": 2,
+            "id": 4442,
             "name": "Multivitamins",
             "image": "images/products/multivitamins.jpg",
             "location": "USA",
@@ -1289,7 +1289,7 @@
             }
           },
           {
-            "id": 3,
+            "id": 4443,
             "name": "Omega-3 Fish Oil",
             "image": "images/products/omega_3.jpg",
             "location": "USA",
