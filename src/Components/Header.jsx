@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
 import { FaUserPlus } from 'react-icons/fa'; // Importing the sign-up icon
+import { Link } from 'react-router-dom'; // Importing Link for client-side routing
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,39 +36,40 @@ const Header = () => {
 
         {/* Desktop Navigation Menu */}
         <nav className="hidden md:flex items-center gap-6">
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="hover:text-[#fbc91a] transition-colors cursor-pointer"
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="/about"
             className="hover:text-[#fbc91a] transition-colors cursor-pointer"
           >
             About Us
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="hover:text-[#fbc91a] transition-colors cursor-pointer"
           >
             Contact Us
-          </a>
-          <a
-            href="#faqs"
+          </Link>
+          <Link
+            to="/faqs"
             className="hover:text-[#fbc91a] transition-colors cursor-pointer"
           >
             FAQs
-          </a>
+          </Link>
 
-          {/* Sign Up Button */}
-          <button
+          {/* Sign Up Button - Now wrapped with Link */}
+          <Link
+            to="/sign-up"
             className="flex items-center gap-2 px-4 py-2 bg-[#1f6306] text-white rounded-lg hover:bg-[#fbc91a] transition-all"
             title="Sign Up"
           >
             <FaUserPlus className="text-lg" />
             <span>Sign Up</span>
-          </button>
+          </Link>
         </nav>
 
         {/* Menu Toggle Icon (for mobile) */}
@@ -99,49 +101,51 @@ const Header = () => {
           }}
         >
           <li>
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="hover:text-[#fbc91a] transition-colors cursor-pointer"
-              onClick={closeMenu} // Close the menu when this link is clicked
+              onClick={closeMenu}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="hover:text-[#fbc91a] transition-colors cursor-pointer"
               onClick={closeMenu}
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="hover:text-[#fbc91a] transition-colors cursor-pointer"
               onClick={closeMenu}
             >
               Contact Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#faqs"
+            <Link
+              to="/faqs"
               className="hover:text-[#fbc91a] transition-colors cursor-pointer"
               onClick={closeMenu}
             >
               FAQs
-            </a>
+            </Link>
           </li>
           <li>
-            <button
+            <Link
+              to="/sign-up"
               className="flex items-center gap-2 px-4 py-2 bg-[#1f6306] text-white rounded-lg hover:bg-[#fbc91a] transition-all"
               title="Sign Up"
+              onClick={closeMenu}
             >
               <FaUserPlus className="text-lg" />
               <span>Sign Up</span>
-            </button>
+            </Link>
           </li>
         </ul>
       </nav>
