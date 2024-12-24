@@ -47,9 +47,9 @@ const ProductList = () => {
         {products.length === 0 ? (
           <p className="text-center text-lg text-gray-500">No products available</p>
         ) : (
-          products.map((product) => (
-            <div key={product.id} className="bg-white rounded-xl shadow-lg overflow-hidden text-center cursor-pointer">
-              {/* Image */}
+          products.map((product, index) => (
+            <div key={`${product.id}-${index}`} className="bg-white rounded-xl shadow-lg overflow-hidden text-center cursor-pointer">
+              {/* Product Image */}
               <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
               <div className="p-4">
                 {/* Product Name */}

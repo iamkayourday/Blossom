@@ -8,6 +8,7 @@ import SignUp from "./Auth/SignUp";
 import About from "./Pages/About";
 import ForgotPassword from "./Auth/ForgotPassword";
 import CategoryDetails from "./Components/Categories/CategoryDetails";
+import ProductDetails from "./Components/Categories/ProductDetails";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/forget-password" element={<ForgotPassword />} />
         <Route path="/about" element={<About />} />
         <Route path="/category/:id" element={<CategoryDetails />} />
+        <Route path="/product/:productId" element={<ProductDetails />} />
       </Routes>
     </Router>
   );

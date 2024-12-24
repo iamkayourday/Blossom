@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import data from '../../data.json'; // Import your JSON data
 import Header from '../Header';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const CategoryDetails = () => {
   const { id } = useParams(); // Get category ID from the URL
@@ -89,12 +90,14 @@ const CategoryDetails = () => {
             <p className="text-center text-lg text-gray-500">No products available</p>
           ) : (
             category.products.map((product) => (
-              <div
+              <Link
                 key={product.id}
+                to={`/product/${product.id}`} // Link to the product details page
                 className="bg-white rounded-xl shadow-lg overflow-hidden text-center cursor-pointer"
               >
                 {/* Product Image */}
-                <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
+                <img src={`/${product.image}`} alt={product.name} className="w-full h-48 object-cover" />
+
                 <div className="p-4">
                   {/* Product Name */}
                   <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
@@ -102,16 +105,14 @@ const CategoryDetails = () => {
                   <p className="text-xl font-bold text-gray-900 mt-2">{product.price}</p>
                   {/* Product Availability */}
                   <p
-                    className={`text-sm mt-1 ${
-                      product.availability === 'In Stock' ? 'text-green-500' : 'text-red-500'
-                    }`}
+                    className={`text-sm mt-1 ${product.availability === 'In Stock' ? 'text-green-500' : 'text-red-500'}`}
                   >
                     {product.availability}
                   </p>
                   {/* Product Location */}
                   <p className="text-sm text-gray-500">{product.location}</p>
                 </div>
-              </div>
+              </Link>
             ))
           )}
         </div>

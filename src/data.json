@@ -41,7 +41,7 @@
             {
             "id": 2,
             "name": "Banana",
-            "image": "images/products/banana.jpg",
+            "image": "img/dairy.png",
             "location": "Chiquita, Ecuador",
             "description": "Ripe bananas perfect for snacking and smoothies.",
             "storage": "Keep at room temperature. Refrigerate if overripe.",
@@ -147,6 +147,7 @@
           }
         ]
       },
+      
       {
         "id": 3,
         "name": "Grains and Cereals",
