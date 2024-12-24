@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import data from '../../data.json';  // Import your data
 
 const CategoryList = () => {
@@ -17,12 +18,14 @@ const CategoryList = () => {
         ) : (
           categories.map((category) => (
             <div key={category.id} className="text-center">
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer">
-                {/* Image */}
-                <img src={category.image} alt={category.name} className="w-full h-40 object-cover" />
-              </div>
-              {/* Text under the card */}
-              <h3 className="text-sm font-semibold mt-2">{category.name}</h3>
+              <Link to={`/category/${category.id}`}>
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer">
+                  {/* Image */}
+                  <img src={category.image} alt={category.name} className="w-full h-40 object-cover" />
+                </div>
+                {/* Text under the card */}
+                <h3 className="text-sm font-semibold mt-2">{category.name}</h3>
+              </Link>
             </div>
           ))
         )}

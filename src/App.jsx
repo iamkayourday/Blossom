@@ -7,6 +7,7 @@ import SignIn from "./Auth/SignIn";
 import SignUp from "./Auth/SignUp"; 
 import About from "./Pages/About";
 import ForgotPassword from "./Auth/ForgotPassword";
+import CategoryDetails from "./Components/Categories/CategoryDetails";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/forget-password" element={<ForgotPassword />} />
         <Route path="/about" element={<About />} />
+        <Route path="/category/:id" element={<CategoryDetails />} />
       </Routes>
     </Router>
   );

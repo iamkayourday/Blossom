@@ -8,7 +8,7 @@
             {
             "id": 1,
             "name": "Apple",
-            "image": "images/products/apple.jpg",
+            "image": "img/fruits.png",
             "location": "Washington, USA",
             "description": "Fresh and juicy apples harvested from organic farms.",
             "storage": "Store in a cool, dry place. Best consumed within 7 days.",
@@ -1211,113 +1211,6 @@
               "location": "Texas, USA",
               "contact": "texasbbq@example.com",
               "rating": 4.8
-            }
-          }
-        ]
-      },
-      
-      {
-        "id": 14,
-        "name": "Baby Products",
-        "image": "images/baby_products.jpg",
-        "products": [
-          {
-            "id": 1,
-            "name": "Baby Wipes",
-            "image": "images/products/baby_wipes.jpg",
-            "location": "USA",
-            "description": "Gentle wipes for your baby's delicate skin.",
-            "storage": "Store at room temperature.",
-            "certifications": ["Hypoallergenic"],
-            "nutritional_info": "N/A",
-            "reviews": [
-                {
-                    "user": "Customer123",
-                    "rating": 4,
-                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
-                    "date": "2024-12-01"
-                },
-                {
-                    "user": "User456",
-                    "rating": 5,
-                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
-                    "date": "2024-12-02"
-                }
-            ],
-            "availability": "In Stock",
-            "price": "$4.00",
-            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
-            "seller": {
-              "name": "BabyCare Inc.",
-              "location": "USA",
-              "contact": "babycare@example.com",
-              "rating": 4.7
-            }
-          },
-          {
-            "id": 2,
-            "name": "Baby Lotion",
-            "image": "images/products/baby_lotion.jpg",
-            "location": "USA",
-            "description": "Soft and nourishing lotion for babies.",
-            "storage": "Store at room temperature.",
-            "certifications": ["Hypoallergenic", "Paraben-free"],
-            "nutritional_info": "N/A",
-            "reviews": [
-                {
-                    "user": "Customer123",
-                    "rating": 4,
-                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
-                    "date": "2024-12-01"
-                },
-                {
-                    "user": "User456",
-                    "rating": 5,
-                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
-                    "date": "2024-12-02"
-                }
-            ],
-            "availability": "In Stock",
-            "price": "$4.00",
-            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
-            "seller": {
-              "name": "BabyCare Inc.",
-              "location": "USA",
-              "contact": "babycare@example.com",
-              "rating": 4.8
-            }
-          },
-          {
-            "id": 3,
-            "name": "Diapers",
-            "image": "images/products/diapers.jpg",
-            "location": "USA",
-            "description": "Soft and comfortable diapers for your baby.",
-            "storage": "Store at room temperature.",
-            "certifications": ["Hypoallergenic", "Free of harmful chemicals"],
-            "nutritional_info": "N/A",
-            "reviews": [
-                {
-                    "user": "Customer123",
-                    "rating": 4,
-                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
-                    "date": "2024-12-01"
-                },
-                {
-                    "user": "User456",
-                    "rating": 5,
-                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
-                    "date": "2024-12-02"
-                }
-            ],
-            "availability": "In Stock",
-            "price": "$4.00",
-            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
-            "seller": {
-              "name": "BabyCare Inc.",
-              "location": "USA",
-              "contact": "babycare@example.com",
-              "rating": 4.9
             }
           }
         ]
