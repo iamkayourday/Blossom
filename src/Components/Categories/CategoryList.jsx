@@ -1,3 +1,10 @@
+// This component, CategoryList, is responsible for displaying a list of categories. 
+// It simulates fetching data (which can be replaced with an actual API call) and displays 
+// a skeleton loader while the data is being loaded. Once the categories are loaded, 
+// it renders them in a grid layout with images and names. Each category is clickable 
+// and links to a detailed page for that specific category. If no categories are available, 
+// a message is shown to the user.
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import data from '../../data.json'; // Import your data

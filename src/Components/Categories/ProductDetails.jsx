@@ -1,3 +1,12 @@
+// This component, ProductDetails, is responsible for displaying detailed information 
+// about a specific product. It uses the product ID from the URL parameters to find 
+// and display the corresponding product from a list of categories. The component 
+// simulates loading for 2 seconds to improve UX, showing a loading message during 
+// that time. If the product is not found, a "Product not found" message is displayed. 
+// Once the product is loaded, it shows details such as the product image, price, 
+// availability, location, description, nutritional information, certifications, 
+// reviews, and seller information.
+
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../../data.json'; // Import your JSON data

@@ -1,3 +1,11 @@
+// This component, CategoryDetails, is responsible for displaying detailed information 
+// about a specific product category. It retrieves the category data based on the 
+// category ID from the URL (using useParams) and displays the category name and 
+// its associated products. If the category is still loading, a skeleton loader is shown. 
+// If no products are available or if the category is not found, appropriate messages are displayed. 
+// The component also includes a back button for mobile, allowing users to navigate back to the previous page. 
+// Each product is clickable, linking to a detailed product page.
+
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import data from '../../data.json'; // Import your JSON data
@@ -5,31 +13,36 @@ import Header from '../Header';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const CategoryDetails = () => {
-  const { id } = useParams(); // Get category ID from the URL
+  // Get the category ID from the URL using the useParams hook
+  const { id } = useParams();
+  
+  // State to store the category data and loading state
   const [category, setCategory] = useState(null);
-  const [loading, setLoading] = useState(true); // Add loading state
-  const navigate = useNavigate(); // React Router hook for navigation
+  const [loading, setLoading] = useState(true); // Add loading state to simulate data fetching
+
+  // useNavigate hook to allow navigation in the app
+  const navigate = useNavigate();
 
   useEffect(() => {
-    // Simulate loading for better UX
+    // Simulate loading delay for better UX experience
     const timer = setTimeout(() => {
-      // Find the category by ID
+      // Find the category by ID from the data
       const selectedCategory = data.categories.find((cat) => String(cat.id) === String(id));
-      setCategory(selectedCategory);
+      setCategory(selectedCategory); // Set the found category
       setLoading(false); // Stop loading after data is set
-    }, 2000);
+    }, 2000); // Simulate a 2-second loading time
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer); // Clean up the timer on component unmount
   }, [id]);
 
   if (loading) {
-    // Skeleton loader
+    // Show skeleton loader while data is being fetched
     return (
       <>
         <Header />
         <div className="container mx-auto px-4 lg:px-16 py-8">
           <div className="flex items-center mb-6">
-            {/* Back Arrow Skeleton */}
+            {/* Mobile back button skeleton */}
             <div className="w-8 h-8 bg-gray-300 rounded-full animate-pulse md:hidden"></div>
             <div className="w-1/3 h-8 bg-gray-300 rounded-md animate-pulse mx-auto"></div>
           </div>
@@ -53,6 +66,7 @@ const CategoryDetails = () => {
   }
 
   if (!category) {
+    // If no category is found, display a message
     return (
       <>
         <Header />
@@ -65,10 +79,10 @@ const CategoryDetails = () => {
     <>
       <Header />
       <div className="container mx-auto px-4 lg:px-16 py-8">
-        {/* Back Arrow for Mobile */}
+        {/* Back button for mobile, allows navigation to the previous page */}
         <div className="flex items-center mb-6">
           <button
-            onClick={() => navigate(-1)} // Navigate back
+            onClick={() => navigate(-1)} // Navigate back to the previous page
             className="p-2 text-gray-600 hover:text-gray-800 md:hidden"
           >
             {/* Back Arrow Icon */}
@@ -87,6 +101,7 @@ const CategoryDetails = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {category.products.length === 0 ? (
+            // If no products are available in the category
             <p className="text-center text-lg text-gray-500">No products available</p>
           ) : (
             category.products.map((product) => (
