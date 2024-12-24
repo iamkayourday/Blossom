@@ -1,0 +1,1435 @@
+{
+    "categories": [
+    {
+        "id": 1,
+        "name": "Fruits",
+        "image": "img/fruits.png",
+        "products": [
+            {
+            "id": 1,
+            "name": "Apple",
+            "image": "images/products/apple.jpg",
+            "location": "Washington, USA",
+            "description": "Fresh and juicy apples harvested from organic farms.",
+            "storage": "Store in a cool, dry place. Best consumed within 7 days.",
+            "certifications": ["Organic", "Fair Trade"],
+            "nutritional_info": "Calories: 95, Vitamin C: 14% RDI",
+            "reviews": [
+                {
+                "user": "Customer123",
+                "rating": 4,
+                "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                "date": "2024-12-01"
+                },
+                {
+                "user": "User456",
+                "rating": 5,
+                "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$5.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+                "name": "Farm Fresh Produce",
+                "location": "Washington, USA",
+                "contact": "farmfresh@example.com",
+                "rating": 4.8
+            }
+            },
+            {
+            "id": 2,
+            "name": "Banana",
+            "image": "images/products/banana.jpg",
+            "location": "Chiquita, Ecuador",
+            "description": "Ripe bananas perfect for snacking and smoothies.",
+            "storage": "Keep at room temperature. Refrigerate if overripe.",
+            "certifications": ["Fair Trade"],
+            "nutritional_info": "Calories: 105, Potassium: 14% RDI",
+            "reviews": [
+                {
+                "user": "Customer123",
+                "rating": 4,
+                "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                "date": "2024-12-01"
+                },
+                {
+                "user": "User456",
+                "rating": 5,
+                "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+                "name": "Chiquita Farms",
+                "location": "Ecuador",
+                "contact": "chiquita@example.com",
+                "rating": 4.7
+            }
+            }
+        ]
+        },
+          
+      {
+        "id": 2,
+        "name": "Vegetables",
+        "image": "img/vegetables.png",
+        "products": [
+          {
+            "id": 1,
+            "name": "Carrot",
+            "image": "images/products/carrot.jpg",
+            "location": "California, USA",
+            "description": "Crunchy and nutritious carrots great for salads.",
+            "storage": "Store in the fridge in a plastic bag.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 41, Vitamin A: 184% RDI",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "California Organics",
+              "location": "California, USA",
+              "contact": "californiaorganics@example.com",
+              "rating": 4.6
+            }
+          },
+          {
+            "id": 2,
+            "name": "Broccoli",
+            "image": "images/products/broccoli.jpg",
+            "location": "Brittany, France",
+            "description": "Fresh broccoli rich in vitamins and minerals.",
+            "storage": "Store in the fridge. Best consumed within 3 days.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 55, Vitamin C: 135% RDI",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Brittany Green Farms",
+              "location": "Brittany, France",
+              "contact": "brittanygreenfarms@example.com",
+              "rating": 4.5
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Grains and Cereals",
+        "image": "img/grains.png",
+        "products": [
+          {
+            "id": 1,
+            "name": "Rice",
+            "image": "images/products/rice.jpg",
+            "location": "Bangladesh",
+            "description": "Premium quality rice, ideal for everyday meals.",
+            "storage": "Store in a cool, dry place, away from sunlight.",
+            "certifications": ["Fair Trade"],
+            "nutritional_info": "Calories: 205, Carbohydrates: 45g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Bangladesh Rice Exporters",
+              "location": "Bangladesh",
+              "contact": "bangladeshrice@example.com",
+              "rating": 4.4
+            }
+          },
+          {
+            "id": 2,
+            "name": "Quinoa",
+            "image": "images/products/quinoa.jpg",
+            "location": "Bolivia",
+            "description": "Organic quinoa rich in protein and fiber.",
+            "storage": "Store in an airtight container in a cool, dry place.",
+            "certifications": ["Organic", "Fair Trade"],
+            "nutritional_info": "Calories: 120, Protein: 4g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Bolivia Quinoa Co.",
+              "location": "Bolivia",
+              "contact": "boliviaquinoa@example.com",
+              "rating": 4.7
+            }
+          },
+          {
+            "id": 3,
+            "name": "Oats",
+            "image": "images/products/oats.jpg",
+            "location": "Canada",
+            "description": "Whole grain oats for a healthy breakfast.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 150, Fiber: 5g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Canadian Grains",
+              "location": "Canada",
+              "contact": "canadiangrains@example.com",
+              "rating": 4.5
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Tubers",
+        "image": "img/tubers.png",
+        "products": [
+          {
+            "id": 1,
+            "name": "Potato",
+            "image": "images/products/potato.jpg",
+            "location": "Idaho, USA",
+            "description": "Versatile potatoes ideal for mashing, baking, or frying.",
+            "storage": "Store in a cool, dark place.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 77, Carbohydrates: 17g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Idaho Potato Growers",
+              "location": "Idaho, USA",
+              "contact": "idahopotatoes@example.com",
+              "rating": 4.7
+            }
+          },
+          {
+            "id": 2,
+            "name": "Sweet Potato",
+            "image": "images/products/sweet_potato.jpg",
+            "location": "North Carolina, USA",
+            "description": "Nutritious and naturally sweet potatoes for various dishes.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Organic", "Non-GMO"],
+            "nutritional_info": "Calories: 86, Carbohydrates: 20g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "North Carolina Sweet Potatoes",
+              "location": "North Carolina, USA",
+              "contact": "ncsweetpotatoes@example.com",
+              "rating": 4.6
+            }
+          },
+          {
+            "id": 3,
+            "name": "Yam",
+            "image": "images/products/yam.jpg",
+            "location": "Nigeria",
+            "description": "Delicious yams, perfect for boiling, frying, or grilling.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 118, Carbohydrates: 27g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Nigeria Yam Farmers",
+              "location": "Nigeria",
+              "contact": "nigeriayam@example.com",
+              "rating": 4.8
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Dairy",
+        "image": "img/dairy.png",
+        "products": [
+          {
+            "id": 1,
+            "name": "Milk",
+            "image": "images/products/milk.jpg",
+            "location": "Dairyland, USA",
+            "description": "Fresh milk from grass-fed cows.",
+            "storage": "Keep refrigerated.",
+            "certifications": ["Organic", "Hormone-free"],
+            "nutritional_info": "Calories: 150, Protein: 8g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Dairyland Farms",
+              "location": "USA",
+              "contact": "dairyland@example.com",
+              "rating": 4.9
+            }
+          },
+          {
+            "id": 2,
+            "name": "Cheddar Cheese",
+            "image": "images/products/cheddar_cheese.jpg",
+            "location": "Wisconsin, USA",
+            "description": "Aged cheddar with a sharp, rich flavor.",
+            "storage": "Keep refrigerated.",
+            "certifications": ["Organic", "Hormone-free"],
+            "nutritional_info": "Calories: 115, Protein: 7g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Wisconsin Dairy Co.",
+              "location": "Wisconsin, USA",
+              "contact": "wisconsindairy@example.com",
+              "rating": 4.8
+            }
+          },
+          {
+            "id": 3,
+            "name": "Yogurt",
+            "image": "images/products/yogurt.jpg",
+            "location": "California, USA",
+            "description": "Creamy and smooth yogurt made with natural ingredients.",
+            "storage": "Keep refrigerated.",
+            "certifications": ["Organic", "Probiotic-rich"],
+            "nutritional_info": "Calories: 100, Protein: 5g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "California Yogurt Producers",
+              "location": "California, USA",
+              "contact": "californiayogurt@example.com",
+              "rating": 4.7
+            }
+          }
+        ]
+      },
+      
+      
+      {
+        "id": 7,
+        "name": "Nuts and Seeds",
+        "image": "img/nuts.jpg",
+        "products": [
+          {
+            "id": 1,
+            "name": "Almonds",
+            "image": "images/products/almonds.jpg",
+            "location": "California, USA",
+            "description": "Roasted almonds, a perfect healthy snack.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 160, Protein: 6g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "California Nuts",
+              "location": "California, USA",
+              "contact": "californianuts@example.com",
+              "rating": 4.8
+            }
+          },
+          {
+            "id": 2,
+            "name": "Cashews",
+            "image": "images/products/cashews.jpg",
+            "location": "India",
+            "description": "Raw cashews, a crunchy and nutritious snack.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 155, Protein: 5g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Indian Cashew Growers",
+              "location": "India",
+              "contact": "cashewsindia@example.com",
+              "rating": 4.6
+            }
+          },
+          {
+            "id": 3,
+            "name": "Sunflower Seeds",
+            "image": "images/products/sunflower_seeds.jpg",
+            "location": "Ukraine",
+            "description": "Natural sunflower seeds, great for snacking or adding to salads.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 180, Protein: 7g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Ukrainian Seed Co.",
+              "location": "Ukraine",
+              "contact": "sunflowerseeds@example.com",
+              "rating": 4.7
+            }
+          }
+        ]
+      },
+      
+      {
+        "id": 8,
+        "name": "Spices",
+        "image": "img/spices.jpg",
+        "products": [
+          {
+            "id": 1,
+            "name": "Cinnamon",
+            "image": "images/products/cinnamon.jpg",
+            "location": "Sri Lanka",
+            "description": "Premium quality cinnamon sticks.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 6, Fiber: 1g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Sri Lanka Spices",
+              "location": "Sri Lanka",
+              "contact": "srilankaspices@example.com",
+              "rating": 4.7
+            }
+          },
+          {
+            "id": 2,
+            "name": "Black Pepper",
+            "image": "images/products/black_pepper.jpg",
+            "location": "India",
+            "description": "Ground black pepper, perfect for seasoning dishes.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 6, Carbohydrates: 1g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Indian Spice Co.",
+              "location": "India",
+              "contact": "indianspices@example.com",
+              "rating": 4.6
+            }
+          },
+          {
+            "id": 3,
+            "name": "Turmeric",
+            "image": "images/products/turmeric.jpg",
+            "location": "India",
+            "description": "Organic turmeric powder, known for its health benefits.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 29, Fiber: 2g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Indian Spice Co.",
+              "location": "India",
+              "contact": "indianspices@example.com",
+              "rating": 4.8
+            }
+          }
+        ]
+      },
+      
+      {
+        "id": 9,
+        "name": "Baked Goods",
+        "image": "img/baked.jpg",
+        "products": [
+          {
+            "id": 1,
+            "name": "Whole Wheat Bread",
+            "image": "images/products/wheat_bread.jpg",
+            "location": "New York, USA",
+            "description": "Freshly baked whole wheat bread.",
+            "storage": "Store in a cool place or freeze for longer storage.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 100, Carbohydrates: 20g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Bakery Fresh",
+              "location": "New York, USA",
+              "contact": "bakeryfresh@example.com",
+              "rating": 4.6
+            }
+          },
+          {
+            "id": 2,
+            "name": "Chocolate Chip Cookies",
+            "image": "images/products/chocolate_chip_cookies.jpg",
+            "location": "California, USA",
+            "description": "Delicious chocolate chip cookies, freshly baked.",
+            "storage": "Store in an airtight container.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 150, Carbohydrates: 25g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Cookie Delight",
+              "location": "California, USA",
+              "contact": "cookiedelight@example.com",
+              "rating": 4.8
+            }
+          },
+          {
+            "id": 3,
+            "name": "Croissants",
+            "image": "images/products/croissants.jpg",
+            "location": "Paris, France",
+            "description": "Buttery, flaky croissants made with the finest ingredients.",
+            "storage": "Store in a cool place, best eaten fresh.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 200, Fat: 12g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Parisian Bakery",
+              "location": "Paris, France",
+              "contact": "parisianbakery@example.com",
+              "rating": 4.9
+            }
+          }
+        ]
+      },
+      
+      {
+        "id": 10,
+        "name": "Frozen Foods",
+        "image": "img/frozen.jpg",
+        "products": [
+          {
+            "id": 1,
+            "name": "Frozen Peas",
+            "image": "images/products/frozen_peas.jpg",
+            "location": "Green Farms, USA",
+            "description": "Frozen peas, perfect for quick meals.",
+            "storage": "Keep frozen at all times.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 60, Fiber: 4g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Green Farms",
+              "location": "USA",
+              "contact": "greenfarms@example.com",
+              "rating": 4.8
+            }
+          },
+          {
+            "id": 2,
+            "name": "Frozen Corn",
+            "image": "images/products/frozen_corn.jpg",
+            "location": "Sunny Acres, USA",
+            "description": "Sweet and crisp frozen corn, ideal for quick meals.",
+            "storage": "Keep frozen at all times.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 80, Carbohydrates: 18g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Sunny Acres",
+              "location": "USA",
+              "contact": "sunnyacres@example.com",
+              "rating": 4.6
+            }
+          },
+          {
+            "id": 3,
+            "name": "Frozen Broccoli",
+            "image": "images/products/frozen_broccoli.jpg",
+            "location": "Green Valley, USA",
+            "description": "Frozen broccoli, perfect for a healthy meal.",
+            "storage": "Keep frozen at all times.",
+            "certifications": ["Non-GMO", "Organic"],
+            "nutritional_info": "Calories: 55, Fiber: 5g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Green Valley",
+              "location": "USA",
+              "contact": "greenvalley@example.com",
+              "rating": 4.7
+            }
+          }
+        ]
+      },
+      
+      {
+        "id": 11,
+        "name": "Meats and Seafood",
+        "image": "img/meats.jpg",
+        "products": [
+          {
+            "id": 1,
+            "name": "Chicken Breast",
+            "image": "images/products/chicken_breast.jpg",
+            "location": "Texas, USA",
+            "description": "Lean and tender chicken breasts.",
+            "storage": "Keep refrigerated or frozen.",
+            "certifications": ["Hormone-free"],
+            "nutritional_info": "Calories: 165, Protein: 31g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Texas Poultry",
+              "location": "Texas, USA",
+              "contact": "texaspoultry@example.com",
+              "rating": 4.9
+            }
+          },
+          {
+            "id": 2,
+            "name": "Salmon Fillet",
+            "image": "images/products/salmon_fillet.jpg",
+            "location": "Alaska, USA",
+            "description": "Fresh and wild-caught salmon fillets.",
+            "storage": "Keep refrigerated or frozen.",
+            "certifications": ["Wild-caught", "Sustainable"],
+            "nutritional_info": "Calories: 200, Protein: 22g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Alaska Seafoods",
+              "location": "Alaska, USA",
+              "contact": "alaskaseafoods@example.com",
+              "rating": 4.8
+            }
+          },
+          {
+            "id": 3,
+            "name": "Shrimp",
+            "image": "images/products/shrimp.jpg",
+            "location": "Gulf of Mexico, USA",
+            "description": "Fresh, wild-caught shrimp.",
+            "storage": "Keep refrigerated or frozen.",
+            "certifications": ["Sustainably Sourced"],
+            "nutritional_info": "Calories: 80, Protein: 15g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Gulf Seafood",
+              "location": "Gulf of Mexico, USA",
+              "contact": "gulfseafood@example.com",
+              "rating": 4.7
+            }
+          }
+        ]
+      },
+      
+      {
+        "id": 12,
+        "name": "Snacks",
+        "image": "images/snacks.jpg",
+        "products": [
+          {
+            "id": 1,
+            "name": "Potato Chips",
+            "image": "images/products/potato_chips.jpg",
+            "location": "USA",
+            "description": "Crunchy and tasty potato chips.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 150, Fat: 10g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "SnackCo",
+              "location": "USA",
+              "contact": "snackco@example.com",
+              "rating": 4.5
+            }
+          },
+          {
+            "id": 2,
+            "name": "Granola Bars",
+            "image": "images/products/granola_bars.jpg",
+            "location": "USA",
+            "description": "Healthy granola bars, great for on-the-go snacking.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 120, Protein: 5g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Healthy Snacks Co.",
+              "location": "USA",
+              "contact": "healthysnacks@example.com",
+              "rating": 4.6
+            }
+          },
+          {
+            "id": 3,
+            "name": "Trail Mix",
+            "image": "images/products/trail_mix.jpg",
+            "location": "USA",
+            "description": "A mix of nuts, seeds, and dried fruit for a healthy snack.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 180, Fat: 12g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Nature's Snacks",
+              "location": "USA",
+              "contact": "naturessnacks@example.com",
+              "rating": 4.7
+            }
+          }
+        ]
+      },
+      
+      {
+        "id": 13,
+        "name": "Condiments",
+        "image": "images/condiments.jpg",
+        "products": [
+          {
+            "id": 1,
+            "name": "Ketchup",
+            "image": "images/products/ketchup.jpg",
+            "location": "California, USA",
+            "description": "Tangy and sweet tomato ketchup.",
+            "storage": "Store in a cool place, refrigerate after opening.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 20, Sugar: 4g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "California Ketchup Co.",
+              "location": "California, USA",
+              "contact": "californiaketchup@example.com",
+              "rating": 4.6
+            }
+          },
+          {
+            "id": 2,
+            "name": "Mustard",
+            "image": "images/products/mustard.jpg",
+            "location": "Germany",
+            "description": "Spicy and tangy mustard for all your meals.",
+            "storage": "Store in a cool place, refrigerate after opening.",
+            "certifications": ["Organic"],
+            "nutritional_info": "Calories: 15, Fat: 1g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "German Mustard Co.",
+              "location": "Germany",
+              "contact": "germanmustard@example.com",
+              "rating": 4.7
+            }
+          },
+          {
+            "id": 3,
+            "name": "Barbecue Sauce",
+            "image": "images/products/barbecue_sauce.jpg",
+            "location": "Texas, USA",
+            "description": "Sweet and smoky barbecue sauce.",
+            "storage": "Store in a cool place, refrigerate after opening.",
+            "certifications": ["Non-GMO"],
+            "nutritional_info": "Calories: 70, Sugar: 12g",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "Texas BBQ Sauces",
+              "location": "Texas, USA",
+              "contact": "texasbbq@example.com",
+              "rating": 4.8
+            }
+          }
+        ]
+      },
+      
+      {
+        "id": 14,
+        "name": "Baby Products",
+        "image": "images/baby_products.jpg",
+        "products": [
+          {
+            "id": 1,
+            "name": "Baby Wipes",
+            "image": "images/products/baby_wipes.jpg",
+            "location": "USA",
+            "description": "Gentle wipes for your baby's delicate skin.",
+            "storage": "Store at room temperature.",
+            "certifications": ["Hypoallergenic"],
+            "nutritional_info": "N/A",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "BabyCare Inc.",
+              "location": "USA",
+              "contact": "babycare@example.com",
+              "rating": 4.7
+            }
+          },
+          {
+            "id": 2,
+            "name": "Baby Lotion",
+            "image": "images/products/baby_lotion.jpg",
+            "location": "USA",
+            "description": "Soft and nourishing lotion for babies.",
+            "storage": "Store at room temperature.",
+            "certifications": ["Hypoallergenic", "Paraben-free"],
+            "nutritional_info": "N/A",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "BabyCare Inc.",
+              "location": "USA",
+              "contact": "babycare@example.com",
+              "rating": 4.8
+            }
+          },
+          {
+            "id": 3,
+            "name": "Diapers",
+            "image": "images/products/diapers.jpg",
+            "location": "USA",
+            "description": "Soft and comfortable diapers for your baby.",
+            "storage": "Store at room temperature.",
+            "certifications": ["Hypoallergenic", "Free of harmful chemicals"],
+            "nutritional_info": "N/A",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "BabyCare Inc.",
+              "location": "USA",
+              "contact": "babycare@example.com",
+              "rating": 4.9
+            }
+          }
+        ]
+      },
+      
+      {
+        "id": 15,
+        "name": "Health & Wellness",
+        "image": "images/health_wellness.jpg",
+        "products": [
+          {
+            "id": 1,
+            "name": "Vitamin C Tablets",
+            "image": "images/products/vitamin_c.jpg",
+            "location": "USA",
+            "description": "Boost your immune system with these Vitamin C tablets.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Vegan", "Gluten-free"],
+            "nutritional_info": "Calories: 10, Vitamin C: 500mg",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "In Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "HealthCare Corp.",
+              "location": "USA",
+              "contact": "healthcare@example.com",
+              "rating": 4.8
+            }
+          },
+          {
+            "id": 2,
+            "name": "Multivitamins",
+            "image": "images/products/multivitamins.jpg",
+            "location": "USA",
+            "description": "A daily multivitamin for overall health and wellness.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Gluten-free", "Non-GMO"],
+            "nutritional_info": "Calories: 15, Vitamin A: 5000 IU, Vitamin D: 400 IU",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "Out of Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "HealthCare Corp.",
+              "location": "USA",
+              "contact": "healthcare@example.com",
+              "rating": 4.7
+            }
+          },
+          {
+            "id": 3,
+            "name": "Omega-3 Fish Oil",
+            "image": "images/products/omega_3.jpg",
+            "location": "USA",
+            "description": "Rich in Omega-3 fatty acids for heart health.",
+            "storage": "Store in a cool, dry place.",
+            "certifications": ["Non-GMO", "Gluten-free"],
+            "nutritional_info": "Calories: 20, Omega-3: 1000mg",
+            "reviews": [
+                {
+                    "user": "Customer123",
+                    "rating": 4,
+                    "comment": "Good quality product! Worth the price, but could improve in some areas.",
+                    "date": "2024-12-01"
+                },
+                {
+                    "user": "User456",
+                    "rating": 5,
+                    "comment": "Excellent product, exactly as described. Very happy with my purchase!",
+                    "date": "2024-12-02"
+                }
+            ],
+            "availability": "Out of Stock",
+            "price": "$4.00",
+            "payment_methods": ["Visa", "Mastercard", "PayPal", "Stripe"],
+            "seller": {
+              "name": "HealthCare Corp.",
+              "location": "USA",
+              "contact": "healthcare@example.com",
+              "rating": 4.9
+            }
+          }
+        ]
+      }
+      
+    ]
+  }
+  
