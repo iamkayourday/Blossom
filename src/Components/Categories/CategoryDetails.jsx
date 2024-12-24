@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import data from '../../data.json'; // Import your JSON data
+import Header from '../Header';
 
 const CategoryDetails = () => {
   const { id } = useParams(); // Get category ID from the URL
@@ -18,6 +19,9 @@ const CategoryDetails = () => {
   }
 
   return (
+    <>
+    <Header />
+
     <div className="container mx-auto px-4 lg:px-16 py-8">
       {/* Back Arrow for Mobile */}
       <div className="flex items-center mb-6">
@@ -57,6 +61,7 @@ const CategoryDetails = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 
