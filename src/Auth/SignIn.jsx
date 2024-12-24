@@ -93,7 +93,7 @@ const SignIn = () => {
               </button>
               <div className="mt-4 text-center">
                 <Link
-                  to="#forgot-password" // Update to correct route if needed
+                  to="/forget-password" // Update to correct route if needed
                   className="text-sm text-[#0e2207] hover:underline"
                 >
                   Forgot password?
