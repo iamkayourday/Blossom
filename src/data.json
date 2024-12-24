@@ -82,7 +82,7 @@
           {
             "id": 1,
             "name": "Carrot",
-            "image": "images/products/carrot.jpg",
+            "image": "img/dairy.png",
             "location": "California, USA",
             "description": "Crunchy and nutritious carrots great for salads.",
             "storage": "Store in the fridge in a plastic bag.",
@@ -147,7 +147,7 @@
           }
         ]
       },
-      
+
       {
         "id": 3,
         "name": "Grains and Cereals",
