@@ -9,6 +9,7 @@ import About from "./Pages/About";
 import ForgotPassword from "./Auth/ForgotPassword";
 import CategoryDetails from "./Components/Categories/CategoryDetails";
 import ProductDetails from "./Components/Categories/ProductDetails";
+import PaymentPage from "./Components/Paymentpage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/category/:id" element={<CategoryDetails />} />
         <Route path="/product/:productId" element={<ProductDetails />} />
+        <Route path="/payment/:productId" element={<PaymentPage />} />
       </Routes>
     </Router>
   );

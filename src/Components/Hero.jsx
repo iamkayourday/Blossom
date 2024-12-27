@@ -15,6 +15,7 @@ const Hero = () => {
     return (
       <div
         className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[900px] bg-gray-200 animate-pulse flex justify-center items-center text-center"
+        aria-live="polite" // Add aria-live for better accessibility
       >
         {/* Text Skeleton Overlay */}
         <div className="absolute bg-gray-300/50 p-4 sm:p-6 md:p-8 lg:p-12 rounded-lg z-10">

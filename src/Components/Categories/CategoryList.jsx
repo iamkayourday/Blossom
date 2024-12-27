@@ -23,10 +23,10 @@ const CategoryList = () => {
       </header>
 
       {/* Grid Section */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4">
+      <div className="grid grid-cols-3 gap-6 py-4">
         {loading ? (
           // Render Skeleton Loaders
-          Array.from({ length: 8 }).map((_, index) => (
+          Array.from({ length: 9 }).map((_, index) => (
             <div key={index} className="text-center">
               <div className="bg-gray-200 animate-pulse rounded-xl h-40 w-full"></div>
               <div className="bg-gray-200 animate-pulse rounded-md h-4 w-3/4 mt-2 mx-auto"></div>
@@ -38,7 +38,7 @@ const CategoryList = () => {
           categories.map((category) => (
             <div key={category.id} className="text-center">
               <Link to={`/category/${category.id}`}>
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer">
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:scale-105 transform transition-all">
                   {/* Image */}
                   <img
                     src={category.image}
