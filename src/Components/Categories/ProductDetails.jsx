@@ -7,10 +7,10 @@
 // availability, location, description, nutritional information, certifications, 
 // reviews, and seller information.
 
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import data from '../../data.json'; // Import your JSON data
-import Header from '../Header';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import data from "../../data.json"; // Import your JSON data
+import Header from "../Header";
 
 const ProductDetails = () => {
   const { productId } = useParams(); // Get product ID from the URL
@@ -44,8 +44,10 @@ const ProductDetails = () => {
     return (
       <>
         <Header />
-        <div className="container mx-auto px-4 lg:px-16 py-8">
-          <div className="text-center text-lg text-gray-500">Loading product...</div>
+        <div className="container mx-auto px-4 lg:px-16 py-8 flex items-center justify-center min-h-screen">
+          <div className="text-center text-lg text-gray-500 animate-pulse">
+            Loading product...
+          </div>
         </div>
       </>
     );
@@ -55,7 +57,9 @@ const ProductDetails = () => {
     return (
       <>
         <Header />
-        <p className="text-center text-lg text-gray-500">Product not found</p>
+        <div className="container mx-auto px-4 lg:px-16 py-8 flex items-center justify-center min-h-screen">
+          <p className="text-center text-lg text-gray-500">Product not found</p>
+        </div>
       </>
     );
   }
@@ -63,66 +67,97 @@ const ProductDetails = () => {
   return (
     <>
       <Header />
-      <div className="container mx-auto px-4 lg:px-16 py-8">
-        <h1 className="text-3xl font-bold text-gray-800 text-center mb-6">{product.name}</h1>
-        <div className="flex justify-center mb-6">
-          <img
-            src={`/${product.image}`}
-            alt={product.name}
-            className="w-80 h-80 object-cover rounded-xl shadow-lg"
-          />
-        </div>
-        <div className="text-center">
-          <p className="text-lg font-bold text-gray-900">{product.price}</p>
-          <p
-            className={`text-sm mt-2 ${
-              product.availability === 'In Stock' ? 'text-green-500' : 'text-red-500'
-            }`}
-          >
-            {product.availability}
-          </p>
-          <p className="text-sm text-gray-500 mt-2">{product.location}</p>
-          <p className="mt-4 text-sm text-gray-700">{product.description}</p>
-
-          <div className="mt-6">
-            <h4 className="text-lg font-semibold">Nutritional Info:</h4>
-            <p className="text-sm text-gray-700">{product.nutritional_info}</p>
+      <div className="container mx-auto px-4 lg:px-16 py-12">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
+          {/* Product Image */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src={`/${product.image}`}
+              alt={product.name}
+              className="w-full h-full object-cover rounded-lg shadow-lg"
+            />
           </div>
 
-          <div className="mt-6">
-            <h4 className="text-lg font-semibold">Certifications:</h4>
-            <ul className="text-sm text-gray-700">
-              {product.certifications.map((cert, index) => (
-                <li key={index}>{cert}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="mt-6">
-            <h4 className="text-lg font-semibold">Reviews:</h4>
-            <ul className="text-sm text-gray-700">
-              {product.reviews.map((review, index) => (
-                <li key={index} className="mt-4">
-                  <p className="font-semibold">{review.user}</p>
-                  <p>Rating: {review.rating} / 5</p>
-                  <p>{review.comment}</p>
-                  <p className="text-gray-500">{review.date}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="mt-6">
-            <h4 className="text-lg font-semibold">Seller Info:</h4>
-            <p className="text-sm text-gray-700">
-              <strong>{product.seller.name}</strong>
-              <br />
-              Location: {product.seller.location}
-              <br />
-              Contact: {product.seller.contact}
-              <br />
-              Rating: {product.seller.rating} / 5
+          {/* Product Details */}
+          <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+            <h1 className="text-3xl font-extrabold text-gray-800 mb-4">
+              {product.name}
+            </h1>
+            <p className="text-xl font-bold text-green-600 mb-2">
+              {product.price}
             </p>
+            <p
+              className={`text-sm ${
+                product.availability === "In Stock"
+                  ? "text-green-500"
+                  : "text-red-500"
+              } mb-6`}
+            >
+              {product.availability}
+            </p>
+            <p className="text-gray-600 mb-4">{product.description}</p>
+
+            <div className="grid grid-cols-2 gap-6">
+              {/* Nutritional Info */}
+              <div>
+                <h4 className="text-lg font-semibold mb-2">Nutritional Info</h4>
+                <p className="text-sm text-gray-700">
+                  {product.nutritional_info}
+                </p>
+              </div>
+
+              {/* Certifications */}
+              <div>
+                <h4 className="text-lg font-semibold mb-2">Certifications</h4>
+                <ul className="text-sm text-gray-700">
+                  {product.certifications.map((cert, index) => (
+                    <li key={index}>{cert}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Reviews */}
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold mb-2">Reviews</h4>
+              <ul>
+                {product.reviews.map((review, index) => (
+                  <li
+                    key={index}
+                    className="border-b border-gray-200 py-4 text-sm"
+                  >
+                    <p className="font-semibold text-gray-800">{review.user}</p>
+                    <p className="text-gray-600">Rating: {review.rating} / 5</p>
+                    <p className="text-gray-700">{review.comment}</p>
+                    <p className="text-xs text-gray-400">{review.date}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Seller Info */}
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold mb-2">Seller Info</h4>
+              <p className="text-sm text-gray-700">
+                <strong>{product.seller.name}</strong>
+                <br />
+                Location: {product.seller.location}
+                <br />
+                Contact: {product.seller.contact}
+                <br />
+                Rating: {product.seller.rating} / 5
+              </p>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="mt-8 flex space-x-4">
+              <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-lg font-semibold">
+                Add to Cart
+              </button>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg font-semibold">
+                Buy Now
+              </button>
+            </div>
           </div>
         </div>
       </div>
