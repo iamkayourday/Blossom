@@ -1,10 +1,3 @@
-// This component, CategoryList, is responsible for displaying a list of categories. 
-// It simulates fetching data (which can be replaced with an actual API call) and displays 
-// a skeleton loader while the data is being loaded. Once the categories are loaded, 
-// it renders them in a grid layout with images and names. Each category is clickable 
-// and links to a detailed page for that specific category. If no categories are available, 
-// a message is shown to the user.
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import data from '../../data.json'; // Import your data
@@ -23,6 +16,13 @@ const CategoryList = () => {
 
   return (
     <div className="container mx-auto px-4 lg:px-80">
+      {/* Header Section */}
+      <header className="py-6 text-center">
+        <h1 className="text-2xl font-bold text-[#1f6306]">Category List</h1>
+        <p className="text-gray-500 mt-2">Explore our available categories below</p>
+      </header>
+
+      {/* Grid Section */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4">
         {loading ? (
           // Render Skeleton Loaders
@@ -40,7 +40,11 @@ const CategoryList = () => {
               <Link to={`/category/${category.id}`}>
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer">
                   {/* Image */}
-                  <img src={category.image} alt={category.name} className="w-full h-40 object-cover" />
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="w-full h-40 object-cover"
+                  />
                 </div>
                 {/* Text under the card */}
                 <h3 className="text-sm font-semibold mt-2">{category.name}</h3>

@@ -20,6 +20,13 @@ const ProductList = () => {
     // Render skeleton loader
     return (
       <div className="container mx-auto px-4 lg:px-16 py-8">
+        {/* Header Section */}
+        <header className="py-6 text-center">
+          <h1 className="text-2xl font-bold text-[#bca067]">Product List</h1>
+          <p className="text-gray-500 mt-2">Browse through our wide range of products</p>
+        </header>
+
+        {/* Skeleton Loaders */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {Array.from({ length: 8 }).map((_, index) => (
             <div
@@ -44,6 +51,13 @@ const ProductList = () => {
 
   return (
     <div className="container mx-auto px-4 lg:px-16 py-8">
+      {/* Header Section */}
+      <header className="py-6 text-center">
+        <h1 className="text-2xl font-bold text-[#1f6306]">Product List</h1>
+        <p className="text-gray-500 mt-2">Browse through our wide range of products</p>
+      </header>
+
+      {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.length === 0 ? (
           <p className="text-center text-lg text-gray-500">No products available</p>
